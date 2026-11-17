@@ -1,0 +1,10 @@
+var P = "D:\\mossls\\mos\\形变\\\\mos_shake\\dist\\mos_shake\\mos_shake.wasm";
+var PR = "D:\\mossls\\mos\\形变\\\\mos_shake\\demo\\mos_shake_demo.ecproj";
+var r1 = app.run("effect.plugins.load", {path: P});
+var p = app.open(File(PR));
+var c = app.project.activeItem;
+var out = "load=" + JSON.stringify(r1.loaded[0].version) + " layers=" + c.numLayers + " name=" + c.name;
+app.run("time.set", {time: 1.0});
+var rr = app.run("render.saveCurrentPreview", {path: "D:\\mossls\\mos\\形变\\\\mos_shake\\build\\out\\reopen\\f.png"});
+out += " frames=" + rr.frames;
+out;

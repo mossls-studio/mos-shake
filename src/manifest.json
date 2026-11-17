@@ -1,0 +1,19 @@
+{
+  "api": 1,
+  "id": "mos.shake",
+  "name": "mos_shake",
+  "category": "MOS",
+  "version": "1.2.0",
+  "author": "MOSSLS",
+  "description": "手持抖动：噪声驱动的位移 + 旋转（可开 X/Y/Z 三轴）、频率与平滑度可调、8 采样运动模糊、拼贴边缘。像素级效果，不写图层变换属性。",
+  "params": [
+    {"id": "amplitude", "name": "抖动幅度", "type": "slider", "default": 20, "min": 0, "max": 300, "decimals": 1},
+    {"id": "rate", "name": "抖动频率(Hz)", "type": "slider", "default": 2.5, "min": 0.05, "max": 30, "decimals": 2},
+    {"id": "smoothness", "name": "抖动平滑度", "type": "slider", "default": 60, "min": 0, "max": 100, "decimals": 0},
+    {"id": "rotation", "name": "抖动的旋转度", "type": "slider", "default": 1.5, "min": 0, "max": 45, "decimals": 2},
+    {"id": "rot3d", "name": "三轴旋转 X/Y/Z", "type": "checkbox", "default": false},
+    {"id": "motion_blur", "name": "运动模糊", "type": "checkbox", "default": false},
+    {"id": "tile", "name": "拼贴模式", "type": "checkbox", "default": false},
+    {"id": "blur_samples", "name": "模糊采样数", "type": "slider", "default": 8, "min": 1, "max": 8, "decimals": 0}
+  ]
+}

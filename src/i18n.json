@@ -1,0 +1,19 @@
+{
+  "$comment": "Localization overlay for src/manifest.json. build.js applies the selected language over the source manifest; anything not listed here falls back to the source value.",
+  "category": { "zh": "MOS 形变", "en": "MOS Deform" },
+  "name": { "zh": "mos_抖动", "en": "mos_shake" },
+  "description": {
+    "zh": "手持抖动：噪声驱动的位移 + 旋转（可开 X/Y/Z 三轴）、频率与平滑度可调、8 采样运动模糊、拼贴边缘。像素级效果，不写图层变换属性。",
+    "en": "Handheld camera shake: noise-driven translation plus rotation (optional X/Y/Z three-axis), adjustable rate and smoothness, 8-sample motion blur and tiled edges. A pixel-level effect that never writes the layer transform properties."
+  },
+  "params": {
+    "amplitude": { "name": { "zh": "抖动幅度", "en": "Shake Amplitude" } },
+    "rate": { "name": { "zh": "抖动频率(Hz)", "en": "Shake Rate (Hz)" } },
+    "smoothness": { "name": { "zh": "抖动平滑度", "en": "Smoothness" } },
+    "rotation": { "name": { "zh": "抖动的旋转度", "en": "Rotation" } },
+    "rot3d": { "name": { "zh": "三轴旋转 X/Y/Z", "en": "3D Rotation X/Y/Z" } },
+    "motion_blur": { "name": { "zh": "运动模糊", "en": "Motion Blur" } },
+    "tile": { "name": { "zh": "拼贴模式", "en": "Tile Edges" } },
+    "blur_samples": { "name": { "zh": "模糊采样数", "en": "Blur Samples" } }
+  }
+}
